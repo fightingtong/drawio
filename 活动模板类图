@@ -13,7 +13,7 @@
         <mxCell id="A85vAiiYOUa6W_EXJAOH-2" parent="A85vAiiYOUa6W_EXJAOH-0" style="line;strokeWidth=1;fillColor=none;align=left;verticalAlign=middle;spacingTop=-1;spacingLeft=3;spacingRight=3;rotatable=0;labelPosition=right;points=[];portConstraint=eastwest;shadow=0;sketch=0;" value="" vertex="1">
           <mxGeometry height="8" width="210" y="52" as="geometry" />
         </mxCell>
-        <mxCell id="A85vAiiYOUa6W_EXJAOH-3" parent="A85vAiiYOUa6W_EXJAOH-0" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;shadow=0;sketch=0;" value="+ checkCondition(): boolean&#xa;+ performTasks(): void&#xa;+ grantReward(): void&#xa;" vertex="1">
+        <mxCell id="A85vAiiYOUa6W_EXJAOH-3" parent="A85vAiiYOUa6W_EXJAOH-0" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;shadow=0;sketch=0;" value="+ checkCondition(): Boolean&#xa;+ performTasks(): Boolean&#xa;+ grantReward(): void&#xa;" vertex="1">
           <mxGeometry height="80" width="210" y="60" as="geometry" />
         </mxCell>
         <mxCell id="A85vAiiYOUa6W_EXJAOH-4" parent="WIyWlLk6GJQsqaUBKTNV-1" style="swimlane;fontStyle=1;align=center;verticalAlign=top;childLayout=stackLayout;horizontal=1;startSize=26;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=1;marginBottom=0;shadow=0;sketch=0;" value="ActivityTemplate" vertex="1">
@@ -27,7 +27,7 @@
         <mxCell id="A85vAiiYOUa6W_EXJAOH-6" parent="A85vAiiYOUa6W_EXJAOH-4" style="line;strokeWidth=1;fillColor=none;align=left;verticalAlign=middle;spacingTop=-1;spacingLeft=3;spacingRight=3;rotatable=0;labelPosition=right;points=[];portConstraint=eastwest;shadow=0;sketch=0;" value="" vertex="1">
           <mxGeometry height="8" width="210" y="52" as="geometry" />
         </mxCell>
-        <mxCell id="A85vAiiYOUa6W_EXJAOH-7" parent="A85vAiiYOUa6W_EXJAOH-4" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;shadow=0;sketch=0;" value="+ {final} executeActivity(): void&#xa;+ checkCondition(): boolean&#xa;+ performTasks(): void&#xa;+ grantReward(): void&#xa;" vertex="1">
+        <mxCell id="A85vAiiYOUa6W_EXJAOH-7" parent="A85vAiiYOUa6W_EXJAOH-4" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;shadow=0;sketch=0;" value="+ {final} executeActivity(): void&#xa;+ checkCondition(): Boolean&#xa;+ performTasks(): Boolean&#xa;+ grantReward(): void&#xa;" vertex="1">
           <mxGeometry height="80" width="210" y="60" as="geometry" />
         </mxCell>
         <mxCell id="A85vAiiYOUa6W_EXJAOH-8" parent="WIyWlLk6GJQsqaUBKTNV-1" style="swimlane;fontStyle=1;align=center;verticalAlign=top;childLayout=stackLayout;horizontal=1;startSize=26;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=1;marginBottom=0;shadow=0;sketch=0;" value="YyyActivity" vertex="1">
@@ -39,7 +39,7 @@
         <mxCell id="A85vAiiYOUa6W_EXJAOH-10" parent="A85vAiiYOUa6W_EXJAOH-8" style="line;strokeWidth=1;fillColor=none;align=left;verticalAlign=middle;spacingTop=-1;spacingLeft=3;spacingRight=3;rotatable=0;labelPosition=right;points=[];portConstraint=eastwest;shadow=0;sketch=0;" value="" vertex="1">
           <mxGeometry height="8" width="210" y="52" as="geometry" />
         </mxCell>
-        <mxCell id="A85vAiiYOUa6W_EXJAOH-11" parent="A85vAiiYOUa6W_EXJAOH-8" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;shadow=0;sketch=0;" value="+ checkCondition(): boolean&#xa;+ performTasks(): void&#xa;+ grantReward(): void&#xa;" vertex="1">
+        <mxCell id="A85vAiiYOUa6W_EXJAOH-11" parent="A85vAiiYOUa6W_EXJAOH-8" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;shadow=0;sketch=0;" value="+ checkCondition(): Boolean&#xa;+ performTasks(): Boolean&#xa;+ grantReward(): void&#xa;" vertex="1">
           <mxGeometry height="80" width="210" y="60" as="geometry" />
         </mxCell>
         <mxCell id="A85vAiiYOUa6W_EXJAOH-12" parent="WIyWlLk6GJQsqaUBKTNV-1" style="swimlane;fontStyle=1;align=center;verticalAlign=top;childLayout=stackLayout;horizontal=1;startSize=26;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=1;marginBottom=0;shadow=0;sketch=0;" value="ZzzActivity" vertex="1">
@@ -51,7 +51,7 @@
         <mxCell id="A85vAiiYOUa6W_EXJAOH-14" parent="A85vAiiYOUa6W_EXJAOH-12" style="line;strokeWidth=1;fillColor=none;align=left;verticalAlign=middle;spacingTop=-1;spacingLeft=3;spacingRight=3;rotatable=0;labelPosition=right;points=[];portConstraint=eastwest;shadow=0;sketch=0;" value="" vertex="1">
           <mxGeometry height="8" width="210" y="52" as="geometry" />
         </mxCell>
-        <mxCell id="A85vAiiYOUa6W_EXJAOH-15" parent="A85vAiiYOUa6W_EXJAOH-12" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;shadow=0;sketch=0;" value="+ checkCondition(): boolean&#xa;+ performTasks(): void&#xa;+ grantReward(): void&#xa;" vertex="1">
+        <mxCell id="A85vAiiYOUa6W_EXJAOH-15" parent="A85vAiiYOUa6W_EXJAOH-12" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;shadow=0;sketch=0;" value="+ checkCondition(): Boolean&#xa;+ performTasks(): Boolean&#xa;+ grantReward(): void&#xa;" vertex="1">
           <mxGeometry height="80" width="210" y="60" as="geometry" />
         </mxCell>
         <mxCell id="A85vAiiYOUa6W_EXJAOH-16" edge="1" parent="WIyWlLk6GJQsqaUBKTNV-1" source="A85vAiiYOUa6W_EXJAOH-8" style="endArrow=block;endFill=0;endSize=12;html=1;exitX=0.5;exitY=0;exitDx=0;exitDy=0;entryX=0.52;entryY=1.013;entryDx=0;entryDy=0;entryPerimeter=0;edgeStyle=orthogonalEdgeStyle;rounded=0;" target="A85vAiiYOUa6W_EXJAOH-7" value="">
