@@ -1,9 +1,87 @@
 <mxfile host="app.diagrams.net" agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/140.0.0.0 Safari/537.36" version="29.3.6">
   <diagram name="第 1 页" id="LD5YYTBHWnP1dcqBVcJE">
-    <mxGraphModel>
+    <mxGraphModel dx="1426" dy="751" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
       <root>
         <mxCell id="0" />
         <mxCell id="1" parent="0" />
+        <mxCell id="X3EKoAC0rK4UDexTajIj-1" parent="1" style="rounded=0;whiteSpace=wrap;html=1;dashed=1;verticalAlign=top;" value="源商品数据" vertex="1">
+          <mxGeometry height="150" width="250" x="400" y="490" as="geometry" />
+        </mxCell>
+        <mxCell id="X3EKoAC0rK4UDexTajIj-2" parent="1" style="rounded=0;whiteSpace=wrap;html=1;dashed=1;verticalAlign=top;" value="数据订阅" vertex="1">
+          <mxGeometry height="120" width="195" x="820" y="410" as="geometry" />
+        </mxCell>
+        <mxCell id="X3EKoAC0rK4UDexTajIj-3" edge="1" parent="1" source="X3EKoAC0rK4UDexTajIj-2" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;" target="X3EKoAC0rK4UDexTajIj-5">
+          <mxGeometry x="351.5" y="310" as="geometry">
+            <mxPoint x="918" y="540" as="sourcePoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="X3EKoAC0rK4UDexTajIj-4" parent="1" style="rounded=1;whiteSpace=wrap;html=1;" value="DTS" vertex="1">
+          <mxGeometry height="40" width="90" x="872.5" y="450" as="geometry" />
+        </mxCell>
+        <mxCell id="X3EKoAC0rK4UDexTajIj-5" parent="1" style="rounded=0;whiteSpace=wrap;html=1;dashed=1;verticalAlign=top;" value="消息队列" vertex="1">
+          <mxGeometry height="120" width="195" x="820" y="590" as="geometry" />
+        </mxCell>
+        <mxCell id="X3EKoAC0rK4UDexTajIj-6" edge="1" parent="1" source="X3EKoAC0rK4UDexTajIj-5" style="rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0;entryY=0.5;entryDx=0;entryDy=0;exitX=1;exitY=0.5;exitDx=0;exitDy=0;edgeStyle=orthogonalEdgeStyle;" target="X3EKoAC0rK4UDexTajIj-12" value="获取变更事件消息">
+          <mxGeometry x="449" y="345" as="geometry">
+            <mxPoint x="1046" y="640" as="sourcePoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="X3EKoAC0rK4UDexTajIj-7" parent="1" style="rounded=1;whiteSpace=wrap;html=1;" value="Kafka" vertex="1">
+          <mxGeometry height="40" width="90" x="872.5" y="630" as="geometry" />
+        </mxCell>
+        <mxCell id="X3EKoAC0rK4UDexTajIj-8" edge="1" parent="1" source="X3EKoAC0rK4UDexTajIj-12" style="edgeStyle=none;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" target="X3EKoAC0rK4UDexTajIj-16">
+          <mxGeometry x="759" y="345" as="geometry" />
+        </mxCell>
+        <mxCell id="X3EKoAC0rK4UDexTajIj-9" connectable="0" parent="X3EKoAC0rK4UDexTajIj-8" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" value="构建商品快照数据" vertex="1">
+          <mxGeometry relative="1" x="-0.2747" y="-1" as="geometry">
+            <mxPoint x="13" y="-16" as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="X3EKoAC0rK4UDexTajIj-10" edge="1" parent="1" source="X3EKoAC0rK4UDexTajIj-12" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.5;entryY=1;entryDx=0;entryDy=0;" target="X3EKoAC0rK4UDexTajIj-1">
+          <mxGeometry x="-41" y="420" as="geometry">
+            <Array as="points">
+              <mxPoint x="1217" y="750" />
+              <mxPoint x="525" y="750" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="X3EKoAC0rK4UDexTajIj-11" connectable="0" parent="X3EKoAC0rK4UDexTajIj-10" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" value="根据商品ID关联查询" vertex="1">
+          <mxGeometry relative="1" x="-0.1965" y="4" as="geometry">
+            <mxPoint x="-83" y="16" as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="X3EKoAC0rK4UDexTajIj-12" parent="1" style="rounded=0;whiteSpace=wrap;html=1;dashed=1;verticalAlign=top;" value="应用服务" vertex="1">
+          <mxGeometry height="150" width="200" x="1125" y="490" as="geometry" />
+        </mxCell>
+        <mxCell id="X3EKoAC0rK4UDexTajIj-13" parent="1" style="rounded=1;whiteSpace=wrap;html=1;" value="商品服务" vertex="1">
+          <mxGeometry height="40" width="90" x="1180" y="550" as="geometry" />
+        </mxCell>
+        <mxCell id="X3EKoAC0rK4UDexTajIj-14" parent="1" style="shape=cylinder3;whiteSpace=wrap;html=1;boundedLbl=1;backgroundOutline=1;size=15;" value="平台商品" vertex="1">
+          <mxGeometry height="60" width="85" x="420" y="540" as="geometry" />
+        </mxCell>
+        <mxCell id="X3EKoAC0rK4UDexTajIj-15" parent="1" style="shape=cylinder3;whiteSpace=wrap;html=1;boundedLbl=1;backgroundOutline=1;size=15;" value="店铺商品" vertex="1">
+          <mxGeometry height="60" width="85" x="540" y="540" as="geometry" />
+        </mxCell>
+        <mxCell id="X3EKoAC0rK4UDexTajIj-16" parent="1" style="rounded=0;whiteSpace=wrap;html=1;dashed=1;verticalAlign=top;" value="源商品数据" vertex="1">
+          <mxGeometry height="150" width="250" x="1452" y="490" as="geometry" />
+        </mxCell>
+        <mxCell id="X3EKoAC0rK4UDexTajIj-17" parent="1" style="shape=cylinder3;whiteSpace=wrap;html=1;boundedLbl=1;backgroundOutline=1;size=15;" value="平台商品快照" vertex="1">
+          <mxGeometry height="60" width="85" x="1472" y="540" as="geometry" />
+        </mxCell>
+        <mxCell id="X3EKoAC0rK4UDexTajIj-18" parent="1" style="shape=cylinder3;whiteSpace=wrap;html=1;boundedLbl=1;backgroundOutline=1;size=15;" value="店铺商品快照" vertex="1">
+          <mxGeometry height="60" width="85" x="1592" y="540" as="geometry" />
+        </mxCell>
+        <mxCell id="X3EKoAC0rK4UDexTajIj-19" edge="1" parent="1" source="X3EKoAC0rK4UDexTajIj-1" style="endArrow=classic;html=1;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;edgeStyle=orthogonalEdgeStyle;rounded=0;" target="X3EKoAC0rK4UDexTajIj-2" value="">
+          <mxGeometry height="50" width="50" x="84" y="250" as="geometry">
+            <mxPoint x="930" y="670" as="sourcePoint" />
+            <mxPoint x="980" y="620" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="X3EKoAC0rK4UDexTajIj-20" connectable="0" parent="X3EKoAC0rK4UDexTajIj-19" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" value="DTS数据订阅&lt;br&gt;监听所有关联表的&lt;br&gt;Insert/Update/Delete操作事件" vertex="1">
+          <mxGeometry relative="1" x="-0.1821" y="-1" as="geometry">
+            <mxPoint x="9.68" y="-76.85" as="offset" />
+          </mxGeometry>
+        </mxCell>
       </root>
     </mxGraphModel>
   </diagram>
