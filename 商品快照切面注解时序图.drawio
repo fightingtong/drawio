@@ -1,9 +1,130 @@
 <mxfile host="app.diagrams.net" agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/140.0.0.0 Safari/537.36" version="29.3.6">
   <diagram name="第 1 页" id="8BBUg52f99ctPXJnLQp-">
-    <mxGraphModel>
+    <mxGraphModel dx="1426" dy="751" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
       <root>
         <mxCell id="0" />
         <mxCell id="1" parent="0" />
+        <mxCell id="92B_YhqqtHSYXAkygI5T-1" parent="1" style="shape=umlLifeline;perimeter=lifelinePerimeter;whiteSpace=wrap;html=1;container=1;collapsible=0;recursiveResize=0;outlineConnect=0;" value="客户端" vertex="1">
+          <mxGeometry height="460" width="100" x="230" y="420" as="geometry" />
+        </mxCell>
+        <mxCell id="92B_YhqqtHSYXAkygI5T-2" parent="92B_YhqqtHSYXAkygI5T-1" style="html=1;points=[];perimeter=orthogonalPerimeter;" value="" vertex="1">
+          <mxGeometry height="300" width="10" x="45" y="70" as="geometry" />
+        </mxCell>
+        <mxCell id="92B_YhqqtHSYXAkygI5T-3" parent="1" style="shape=umlLifeline;perimeter=lifelinePerimeter;whiteSpace=wrap;html=1;container=1;collapsible=0;recursiveResize=0;outlineConnect=0;" value="业务方法" vertex="1">
+          <mxGeometry height="460" width="100" x="380" y="420" as="geometry" />
+        </mxCell>
+        <mxCell id="92B_YhqqtHSYXAkygI5T-4" parent="92B_YhqqtHSYXAkygI5T-3" style="html=1;points=[];perimeter=orthogonalPerimeter;" value="" vertex="1">
+          <mxGeometry height="130" width="10" x="45" y="80" as="geometry" />
+        </mxCell>
+        <mxCell id="92B_YhqqtHSYXAkygI5T-5" parent="1" style="shape=umlLifeline;perimeter=lifelinePerimeter;whiteSpace=wrap;html=1;container=1;collapsible=0;recursiveResize=0;outlineConnect=0;" value="切面" vertex="1">
+          <mxGeometry height="460" width="100" x="534" y="420" as="geometry" />
+        </mxCell>
+        <mxCell id="92B_YhqqtHSYXAkygI5T-6" parent="92B_YhqqtHSYXAkygI5T-5" style="html=1;points=[];perimeter=orthogonalPerimeter;" value="" vertex="1">
+          <mxGeometry height="270" width="10" x="45" y="100" as="geometry" />
+        </mxCell>
+        <mxCell id="92B_YhqqtHSYXAkygI5T-7" parent="1" style="shape=umlLifeline;perimeter=lifelinePerimeter;whiteSpace=wrap;html=1;container=1;collapsible=0;recursiveResize=0;outlineConnect=0;" value="ThreadLocal" vertex="1">
+          <mxGeometry height="460" width="100" x="690" y="420" as="geometry" />
+        </mxCell>
+        <mxCell id="92B_YhqqtHSYXAkygI5T-8" parent="92B_YhqqtHSYXAkygI5T-7" style="html=1;points=[];perimeter=orthogonalPerimeter;" value="" vertex="1">
+          <mxGeometry height="20" width="10" x="45" y="120" as="geometry" />
+        </mxCell>
+        <mxCell id="92B_YhqqtHSYXAkygI5T-9" parent="92B_YhqqtHSYXAkygI5T-7" style="html=1;points=[];perimeter=orthogonalPerimeter;" value="" vertex="1">
+          <mxGeometry height="20" width="10" x="45" y="290" as="geometry" />
+        </mxCell>
+        <mxCell id="92B_YhqqtHSYXAkygI5T-10" edge="1" parent="92B_YhqqtHSYXAkygI5T-7" style="endArrow=classic;html=1;exitX=0.7;exitY=0.037;exitDx=0;exitDy=0;exitPerimeter=0;" value="">
+          <mxGeometry height="50" width="50" x="-102" y="299.00000000000006" as="geometry">
+            <mxPoint x="-102" y="299" as="sourcePoint" />
+            <mxPoint x="45.5" y="299" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="92B_YhqqtHSYXAkygI5T-11" connectable="0" parent="92B_YhqqtHSYXAkygI5T-10" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" value="清理ThreadLocal" vertex="1">
+          <mxGeometry relative="1" x="-0.2814" y="-1" as="geometry">
+            <mxPoint x="18" y="-11.95" as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="92B_YhqqtHSYXAkygI5T-12" parent="1" style="shape=umlLifeline;perimeter=lifelinePerimeter;whiteSpace=wrap;html=1;container=1;collapsible=0;recursiveResize=0;outlineConnect=0;" value="商品快照" vertex="1">
+          <mxGeometry height="460" width="100" x="840" y="420" as="geometry" />
+        </mxCell>
+        <mxCell id="92B_YhqqtHSYXAkygI5T-13" parent="92B_YhqqtHSYXAkygI5T-12" style="html=1;points=[];perimeter=orthogonalPerimeter;" value="" vertex="1">
+          <mxGeometry height="20" width="10" x="45" y="227" as="geometry" />
+        </mxCell>
+        <mxCell id="92B_YhqqtHSYXAkygI5T-14" edge="1" parent="1" source="92B_YhqqtHSYXAkygI5T-2" style="endArrow=classic;html=1;entryX=-0.083;entryY=0.025;entryDx=0;entryDy=0;entryPerimeter=0;exitX=1.056;exitY=0.044;exitDx=0;exitDy=0;exitPerimeter=0;" target="92B_YhqqtHSYXAkygI5T-4" value="">
+          <mxGeometry height="50" width="50" x="115.55999999999995" y="203.20000000000005" as="geometry">
+            <mxPoint x="288" y="503" as="sourcePoint" />
+            <mxPoint x="420" y="504" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="92B_YhqqtHSYXAkygI5T-15" connectable="0" parent="92B_YhqqtHSYXAkygI5T-14" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" value="调用@Snapshot标记方法" vertex="1">
+          <mxGeometry relative="1" x="-0.2814" y="-1" as="geometry">
+            <mxPoint x="18" y="-11.95" as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="92B_YhqqtHSYXAkygI5T-16" edge="1" parent="1" style="endArrow=classic;html=1;exitX=0.7;exitY=0.037;exitDx=0;exitDy=0;exitPerimeter=0;" value="">
+          <mxGeometry height="50" width="50" x="265" y="224.50000000000006" as="geometry">
+            <mxPoint x="435" y="524.5" as="sourcePoint" />
+            <mxPoint x="580" y="525" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="92B_YhqqtHSYXAkygI5T-17" connectable="0" parent="92B_YhqqtHSYXAkygI5T-16" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" value="解析表达式" vertex="1">
+          <mxGeometry relative="1" x="-0.2814" y="-1" as="geometry">
+            <mxPoint x="18" y="-11.95" as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="92B_YhqqtHSYXAkygI5T-18" edge="1" parent="1" style="endArrow=classic;html=1;exitX=0.7;exitY=0.037;exitDx=0;exitDy=0;exitPerimeter=0;" value="">
+          <mxGeometry height="50" width="50" x="418" y="249.00000000000006" as="geometry">
+            <mxPoint x="588" y="549" as="sourcePoint" />
+            <mxPoint x="735.5" y="549" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="92B_YhqqtHSYXAkygI5T-19" connectable="0" parent="92B_YhqqtHSYXAkygI5T-18" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" value="存入商品ID" vertex="1">
+          <mxGeometry relative="1" x="-0.2814" y="-1" as="geometry">
+            <mxPoint x="18" y="-11.95" as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="92B_YhqqtHSYXAkygI5T-20" edge="1" parent="1" source="92B_YhqqtHSYXAkygI5T-6" style="endArrow=classic;html=1;entryX=0.976;entryY=0.54;entryDx=0;entryDy=0;entryPerimeter=0;exitX=0.052;exitY=0.189;exitDx=0;exitDy=0;exitPerimeter=0;" target="92B_YhqqtHSYXAkygI5T-4" value="">
+          <mxGeometry height="50" width="50" x="399" y="270.00000000000006" as="geometry">
+            <mxPoint x="580" y="571" as="sourcePoint" />
+            <mxPoint x="440" y="571" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="92B_YhqqtHSYXAkygI5T-21" connectable="0" parent="92B_YhqqtHSYXAkygI5T-20" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" value="执行业务方法" vertex="1">
+          <mxGeometry relative="1" x="-0.2814" y="-1" as="geometry">
+            <mxPoint x="-27.619999999999997" y="-9.73" as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="92B_YhqqtHSYXAkygI5T-22" edge="1" parent="1" source="92B_YhqqtHSYXAkygI5T-6" style="endArrow=classic;html=1;dashed=1;exitX=-0.044;exitY=0.927;exitDx=0;exitDy=0;exitPerimeter=0;" value="">
+          <mxGeometry height="50" width="50" x="194" y="629" as="geometry">
+            <mxPoint x="575" y="770" as="sourcePoint" />
+            <mxPoint x="285" y="770" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="92B_YhqqtHSYXAkygI5T-23" connectable="0" parent="92B_YhqqtHSYXAkygI5T-22" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" value="返回结果" vertex="1">
+          <mxGeometry relative="1" x="-0.2814" y="-1" as="geometry">
+            <mxPoint x="-19" y="-10" as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="92B_YhqqtHSYXAkygI5T-24" edge="1" parent="1" style="endArrow=classic;html=1;exitX=0.929;exitY=0.862;exitDx=0;exitDy=0;exitPerimeter=0;dashed=1;" value="">
+          <mxGeometry height="50" width="50" x="349.71" y="387.97" as="geometry">
+            <mxPoint x="435" y="611.0300000000002" as="sourcePoint" />
+            <mxPoint x="580" y="611" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="92B_YhqqtHSYXAkygI5T-25" connectable="0" parent="92B_YhqqtHSYXAkygI5T-24" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" value="业务完成" vertex="1">
+          <mxGeometry relative="1" x="-0.2814" y="-1" as="geometry">
+            <mxPoint x="1.1899999999999977" y="-10" as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="92B_YhqqtHSYXAkygI5T-26" edge="1" parent="1" source="92B_YhqqtHSYXAkygI5T-6" style="endArrow=classic;html=1;exitX=1.005;exitY=0.509;exitDx=0;exitDy=0;exitPerimeter=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;entryPerimeter=0;" target="92B_YhqqtHSYXAkygI5T-13" value="">
+          <mxGeometry height="50" width="50" x="548" y="379.00000000000006" as="geometry">
+            <mxPoint x="718" y="679" as="sourcePoint" />
+            <mxPoint x="880" y="657" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="92B_YhqqtHSYXAkygI5T-27" connectable="0" parent="92B_YhqqtHSYXAkygI5T-26" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" value="生成快照" vertex="1">
+          <mxGeometry relative="1" x="-0.2814" y="-1" as="geometry">
+            <mxPoint x="44.66" y="-11.28" as="offset" />
+          </mxGeometry>
+        </mxCell>
       </root>
     </mxGraphModel>
   </diagram>
