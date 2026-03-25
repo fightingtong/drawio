@@ -507,6 +507,105 @@
             <mxPoint x="670" y="2278" as="targetPoint" />
           </mxGeometry>
         </mxCell>
+        <mxCell id="vm8Ou-PtDSYUnnpHv4h1-44" parent="1" style="swimlane;fontStyle=1;align=center;verticalAlign=top;childLayout=stackLayout;horizontal=1;startSize=26;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=1;marginBottom=0;shadow=0;sketch=0;" value="CommonCheckinFlow" vertex="1">
+          <mxGeometry height="120" width="370" x="-400" y="3030" as="geometry" />
+        </mxCell>
+        <mxCell id="vm8Ou-PtDSYUnnpHv4h1-45" parent="vm8Ou-PtDSYUnnpHv4h1-44" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;shadow=0;sketch=0;" value="" vertex="1">
+          <mxGeometry height="26" width="370" y="26" as="geometry" />
+        </mxCell>
+        <mxCell id="vm8Ou-PtDSYUnnpHv4h1-46" parent="vm8Ou-PtDSYUnnpHv4h1-44" style="line;strokeWidth=1;fillColor=none;align=left;verticalAlign=middle;spacingTop=-1;spacingLeft=3;spacingRight=3;rotatable=0;labelPosition=right;points=[];portConstraint=eastwest;shadow=0;sketch=0;" value="" vertex="1">
+          <mxGeometry height="8" width="370" y="52" as="geometry" />
+        </mxCell>
+        <mxCell id="vm8Ou-PtDSYUnnpHv4h1-47" parent="vm8Ou-PtDSYUnnpHv4h1-44" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;shadow=0;sketch=0;" value="+validate(... ...) : : void&#xa;+postCheckinActions(... ...) ::void" vertex="1">
+          <mxGeometry height="60" width="370" y="60" as="geometry" />
+        </mxCell>
+        <mxCell id="vm8Ou-PtDSYUnnpHv4h1-48" parent="1" style="swimlane;fontStyle=1;align=center;verticalAlign=top;childLayout=stackLayout;horizontal=1;startSize=26;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=1;marginBottom=0;shadow=0;sketch=0;" value="AbstractCheckinFlow" vertex="1">
+          <mxGeometry height="150" width="486" x="380" y="2750" as="geometry">
+            <mxRectangle height="26" width="130" x="300" y="170" as="alternateBounds" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="vm8Ou-PtDSYUnnpHv4h1-49" parent="vm8Ou-PtDSYUnnpHv4h1-48" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;shadow=0;sketch=0;" value="- scActivityType: Integer" vertex="1">
+          <mxGeometry height="26" width="486" y="26" as="geometry" />
+        </mxCell>
+        <mxCell id="vm8Ou-PtDSYUnnpHv4h1-50" parent="vm8Ou-PtDSYUnnpHv4h1-48" style="line;strokeWidth=1;fillColor=none;align=left;verticalAlign=middle;spacingTop=-1;spacingLeft=3;spacingRight=3;rotatable=0;labelPosition=right;points=[];portConstraint=eastwest;shadow=0;sketch=0;" value="" vertex="1">
+          <mxGeometry height="8" width="486" y="52" as="geometry" />
+        </mxCell>
+        <mxCell id="vm8Ou-PtDSYUnnpHv4h1-51" parent="vm8Ou-PtDSYUnnpHv4h1-48" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;shadow=0;sketch=0;fontStyle=0" value="+ {final} execute(Long recordld, CheckinContext context) : : CheckinResult&#xa;+validate(RegistrationRecord record, Activity activity, CheckinContext context) : : void&#xa;+verifyCode(RegistrationRecord record, String inputCode) : : boolean&#xa;+performCheckin(RegistrationRecord record)::void&#xa;+postCheckinActions(RegistrationRecord record, CheckinContext context) ::void" vertex="1">
+          <mxGeometry height="90" width="486" y="60" as="geometry" />
+        </mxCell>
+        <mxCell id="vm8Ou-PtDSYUnnpHv4h1-52" edge="1" parent="1" source="vm8Ou-PtDSYUnnpHv4h1-63" style="endArrow=block;endFill=0;endSize=12;html=1;rounded=0;edgeStyle=orthogonalEdgeStyle;exitX=0.5;exitY=0;exitDx=0;exitDy=0;entryX=0.823;entryY=1.025;entryDx=0;entryDy=0;entryPerimeter=0;" target="vm8Ou-PtDSYUnnpHv4h1-51" value="">
+          <mxGeometry width="160" x="175" y="350" as="geometry">
+            <Array as="points">
+              <mxPoint x="605" y="3000" />
+              <mxPoint x="780" y="3000" />
+            </Array>
+            <mxPoint x="1006" y="3020" as="sourcePoint" />
+            <mxPoint x="750" y="2931" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="vm8Ou-PtDSYUnnpHv4h1-53" parent="1" style="swimlane;fontStyle=1;align=center;verticalAlign=top;childLayout=stackLayout;horizontal=1;startSize=26;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=1;marginBottom=0;shadow=0;sketch=0;" value="CheckinFlowFactory" vertex="1">
+          <mxGeometry height="120" width="340" x="164" y="2570" as="geometry" />
+        </mxCell>
+        <mxCell id="vm8Ou-PtDSYUnnpHv4h1-54" parent="vm8Ou-PtDSYUnnpHv4h1-53" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;shadow=0;sketch=0;" value="- flows: Map" vertex="1">
+          <mxGeometry height="26" width="340" y="26" as="geometry" />
+        </mxCell>
+        <mxCell id="vm8Ou-PtDSYUnnpHv4h1-55" parent="vm8Ou-PtDSYUnnpHv4h1-53" style="line;strokeWidth=1;fillColor=none;align=left;verticalAlign=middle;spacingTop=-1;spacingLeft=3;spacingRight=3;rotatable=0;labelPosition=right;points=[];portConstraint=eastwest;shadow=0;sketch=0;" value="" vertex="1">
+          <mxGeometry height="8" width="340" y="52" as="geometry" />
+        </mxCell>
+        <mxCell id="vm8Ou-PtDSYUnnpHv4h1-56" parent="vm8Ou-PtDSYUnnpHv4h1-53" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;shadow=0;sketch=0;" value="+ getFlow(Integer scActivityType):: AbstractRegistrationFlow&#xa;" vertex="1">
+          <mxGeometry height="60" width="340" y="60" as="geometry" />
+        </mxCell>
+        <mxCell id="vm8Ou-PtDSYUnnpHv4h1-57" edge="1" parent="1" source="vm8Ou-PtDSYUnnpHv4h1-56" style="endArrow=open;endFill=1;endSize=12;html=1;exitX=0.527;exitY=0.993;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;dashed=1;exitPerimeter=0;edgeStyle=orthogonalEdgeStyle;rounded=0;curved=0;" target="vm8Ou-PtDSYUnnpHv4h1-48" value="">
+          <mxGeometry width="160" x="262.94000000000005" y="227.29399999999998" as="geometry">
+            <mxPoint x="296" y="2916" as="sourcePoint" />
+            <mxPoint x="346" y="2786" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="vm8Ou-PtDSYUnnpHv4h1-58" edge="1" parent="1" source="vm8Ou-PtDSYUnnpHv4h1-44" style="endArrow=block;endFill=0;endSize=12;html=1;exitX=0.5;exitY=0;exitDx=0;exitDy=0;entryX=0.188;entryY=0.987;entryDx=0;entryDy=0;entryPerimeter=0;edgeStyle=orthogonalEdgeStyle;rounded=0;" target="vm8Ou-PtDSYUnnpHv4h1-51" value="">
+          <mxGeometry width="160" x="145" y="298.96000000000004" as="geometry">
+            <Array as="points">
+              <mxPoint x="-214" y="3030" />
+              <mxPoint x="-214" y="2960" />
+              <mxPoint x="471" y="2960" />
+            </Array>
+            <mxPoint x="113.94000000000005" y="3066.96" as="sourcePoint" />
+            <mxPoint x="380" y="2930" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="vm8Ou-PtDSYUnnpHv4h1-59" parent="1" style="swimlane;fontStyle=1;align=center;verticalAlign=top;childLayout=stackLayout;horizontal=1;startSize=26;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=1;marginBottom=0;shadow=0;sketch=0;" value="TournamentCheckinFlow" vertex="1">
+          <mxGeometry height="120" width="370" x="10" y="3030" as="geometry" />
+        </mxCell>
+        <mxCell id="vm8Ou-PtDSYUnnpHv4h1-60" parent="vm8Ou-PtDSYUnnpHv4h1-59" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;shadow=0;sketch=0;" value="" vertex="1">
+          <mxGeometry height="26" width="370" y="26" as="geometry" />
+        </mxCell>
+        <mxCell id="vm8Ou-PtDSYUnnpHv4h1-61" parent="vm8Ou-PtDSYUnnpHv4h1-59" style="line;strokeWidth=1;fillColor=none;align=left;verticalAlign=middle;spacingTop=-1;spacingLeft=3;spacingRight=3;rotatable=0;labelPosition=right;points=[];portConstraint=eastwest;shadow=0;sketch=0;" value="" vertex="1">
+          <mxGeometry height="8" width="370" y="52" as="geometry" />
+        </mxCell>
+        <mxCell id="vm8Ou-PtDSYUnnpHv4h1-62" parent="vm8Ou-PtDSYUnnpHv4h1-59" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;shadow=0;sketch=0;" value="+validate(... ...) : : void&#xa;+postCheckinActions(... ...) ::void&#xa;+... ..." vertex="1">
+          <mxGeometry height="60" width="370" y="60" as="geometry" />
+        </mxCell>
+        <mxCell id="vm8Ou-PtDSYUnnpHv4h1-63" parent="1" style="swimlane;fontStyle=1;align=center;verticalAlign=top;childLayout=stackLayout;horizontal=1;startSize=26;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=1;marginBottom=0;shadow=0;sketch=0;" value="VenueCheckinFlow" vertex="1">
+          <mxGeometry height="120" width="370" x="420" y="3030" as="geometry" />
+        </mxCell>
+        <mxCell id="vm8Ou-PtDSYUnnpHv4h1-64" parent="vm8Ou-PtDSYUnnpHv4h1-63" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;shadow=0;sketch=0;" value="" vertex="1">
+          <mxGeometry height="26" width="370" y="26" as="geometry" />
+        </mxCell>
+        <mxCell id="vm8Ou-PtDSYUnnpHv4h1-65" parent="vm8Ou-PtDSYUnnpHv4h1-63" style="line;strokeWidth=1;fillColor=none;align=left;verticalAlign=middle;spacingTop=-1;spacingLeft=3;spacingRight=3;rotatable=0;labelPosition=right;points=[];portConstraint=eastwest;shadow=0;sketch=0;" value="" vertex="1">
+          <mxGeometry height="8" width="370" y="52" as="geometry" />
+        </mxCell>
+        <mxCell id="vm8Ou-PtDSYUnnpHv4h1-66" parent="vm8Ou-PtDSYUnnpHv4h1-63" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;shadow=0;sketch=0;" value="+validate(... ...) : : void&#xa;+postCheckinActions(... ...) ::void&#xa;+... ..." vertex="1">
+          <mxGeometry height="60" width="370" y="60" as="geometry" />
+        </mxCell>
+        <mxCell id="vm8Ou-PtDSYUnnpHv4h1-67" edge="1" parent="1" source="vm8Ou-PtDSYUnnpHv4h1-59" style="endArrow=block;endFill=0;endSize=12;html=1;rounded=0;edgeStyle=orthogonalEdgeStyle;entryX=0.479;entryY=1;entryDx=0;entryDy=0;entryPerimeter=0;exitX=0.5;exitY=0;exitDx=0;exitDy=0;" target="vm8Ou-PtDSYUnnpHv4h1-51" value="">
+          <mxGeometry width="160" x="175" y="350" as="geometry">
+            <Array as="points">
+              <mxPoint x="195" y="2980" />
+              <mxPoint x="613" y="2980" />
+            </Array>
+            <mxPoint x="1126" y="2960" as="sourcePoint" />
+            <mxPoint x="926" y="2908" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
       </root>
     </mxGraphModel>
   </diagram>
